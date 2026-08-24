@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MJ विकास — V5</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+  <header><div class="orb">MJ</div><div><h1>MJ विकास</h1><p>Secure AI Device Dashboard</p></div><span class="status">● Online</span></header>
+  <section class="grid">
+    <article><h2>Voice / Chat</h2><div id="chat" class="chat">नमस्ते! MJ विकास तैयार है।</div>
+      <div class="row"><input id="msg" placeholder="MJ से बात करें…"><button onclick="send()">Send</button></div>
+    </article>
+    <article><h2>Paired Device</h2><div class="device">Android device <b id="device">Not paired</b></div>
+      <button onclick="pair()">Pair device</button>
+    </article>
+    <article><h2>Authorized Commands</h2>
+      <div class="commands">
+        <button onclick="cmd('home')">Home</button><button onclick="cmd('back')">Back</button>
+        <button onclick="cmd('recents')">Recents</button><button onclick="cmd('notifications')">Notifications</button>
+        <button onclick="cmd('quick_settings')">Quick Settings</button><button onclick="cmd('screenshot')">Screenshot</button>
+      </div>
+    </article>
+  </section>
+  <footer>V5 • Commands are permission-checked on the Android device.</footer>
+</main>
+<script>
+function send(){const v=document.getElementById('msg').value.trim();if(!v)return;document.getElementById('chat').textContent='You: '+v+'\nMJ: Secure AI backend connection is ready for integration.';}
+function pair(){document.getElementById('device').textContent='Pairing required';}
+function cmd(c){document.getElementById('chat').textContent='Command queued: '+c+'\nAndroid device must authorize and execute it.';}
+</script>
+</body></html>
