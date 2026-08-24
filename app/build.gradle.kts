@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id("com.android.application") versin "8.7.2"
+    id("org.jetbrains.kotlin.android") versin "2.0.21"
 }
 android {
     namespace = "com.mjvikas.app"
