@@ -1,5 +1,4 @@
-
- package com.mjvikas.app
+package com.mjvikas.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -35,6 +34,4 @@ fun AppScreen() {
         Text(text = "MJ विकास")
     }
 }
-       
-    
 
